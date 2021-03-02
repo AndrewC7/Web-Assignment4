@@ -116,14 +116,14 @@ def comparison_results():
             'temp': city1_json['main']['temp'],
             'humidity': city1_json['main']['humidity'],
             'wind_speed': city1_json['wind']['speed'],
-            'sunset': datetime.fromtimestamp(city1_json['sys']['sunset']).strftime("%-I:%M %p")
+            'sunset': datetime.fromtimestamp(city1_json['sys']['sunset'])
         },
         'city2_data': {
             'city': city2_json['name'],
             'temp': city2_json['main']['temp'],
             'humidity': city2_json['main']['humidity'],
             'wind_speed': city2_json['wind']['speed'],
-            'sunset': datetime.fromtimestamp(city2_json['sys']['sunset']).strftime("%-I:%M %p")
+            'sunset': datetime.fromtimestamp(city2_json['sys']['sunset'])
         }
     }
 
